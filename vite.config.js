@@ -94,6 +94,9 @@ export default ({ mode }) =>
     server: {
       port: "3000",
       open: true,
+      hmr:{
+        overlay: false
+      }
     },
     resolve: {
       alias: [
