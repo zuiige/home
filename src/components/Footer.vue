@@ -50,7 +50,6 @@ const store = mainStore();
 const fullYear = new Date().getFullYear();
 
 // 加载配置数据
-// const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const startYear = ref(
   import.meta.env.VITE_SITE_START?.length >= 4 ? 
   import.meta.env.VITE_SITE_START.substring(0, 4) : null

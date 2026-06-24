@@ -1,3 +1,6 @@
 node_modules
 dist
 .gitignore
+auto-imports.d.ts
+components.d.ts
+vite.config.js.timestamp-*.mjs
