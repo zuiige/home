@@ -7,12 +7,14 @@
     </div>
     <!-- 功能区 -->
     <Func />
+    <MoreContent />
   </div>
 </template>
 
 <script setup>
 import { mainStore } from "@/store";
 import Func from "@/views/Func/index.vue";
+import MoreContent from "@/components/MoreContent.vue";
 const store = mainStore();
 
 // 站点链接
@@ -33,6 +35,8 @@ const siteUrl = computed(() => {
   // flex: 1 0 0%;
   width: 50%;
   margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
   .logo {
     width: 100%;
     font-family: "Pacifico-Regular";
@@ -54,7 +58,7 @@ const siteUrl = computed(() => {
       top: 43.26px; // 721px * 0.06
     }
     @media (max-width: 390px) {
-        width: 391px;
+      width: 391px;
     }
   }
   @media (max-width: 720px) {
